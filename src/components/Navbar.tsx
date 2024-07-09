@@ -42,14 +42,14 @@ export function Navbar() {
   return (
     <header className="border-b w-full">
       <NavigationMenu className="mx-auto">
-        <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between">
+        <NavigationMenuList className="container h-14 md:px-20 px-4 w-screen flex justify-between">
           <NavigationMenuItem className="font-bold flex">
             <a
               rel="noreferrer noopener"
               href="/"
               className="font-bold text-xl flex"
             >
-              shinzato.<span className="text-neutral-400">dev</span>
+              shinzato.<span className="text-muted-foreground">dev</span>
             </a>
           </NavigationMenuItem>
 
@@ -71,7 +71,7 @@ export function Navbar() {
                 </SheetDescription>
                 <SheetHeader>
                   <SheetTitle className="font-bold text-xl">
-                    shinzato.dev
+                    shinzato.<span className="text-muted-foreground">dev</span>
                   </SheetTitle>
                 </SheetHeader>
                 <nav className="flex flex-col justify-center items-center gap-2 mt-4">
