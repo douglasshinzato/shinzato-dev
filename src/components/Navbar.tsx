@@ -49,7 +49,7 @@ export function Navbar() {
               href="/"
               className="font-bold text-xl flex"
             >
-              shinzato.dev
+              shinzato.<span className="text-neutral-400">dev</span>
             </a>
           </NavigationMenuItem>
 
