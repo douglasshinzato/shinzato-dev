@@ -24,36 +24,32 @@ interface RouteProps {
 
 const routeList: RouteProps[] = [
   {
-    href: "#features",
-    label: "Features",
+    href: "#sobre",
+    label: "Sobre",
   },
   {
-    href: "#testimonials",
-    label: "Testimonials",
+    href: "#projetos",
+    label: "Projetos",
   },
   {
-    href: "#pricing",
-    label: "Pricing",
-  },
-  {
-    href: "#faq",
-    label: "FAQ",
+    href: "#contato",
+    label: "Contato",
   },
 ]
 
-export const Navbar = () => {
+export function Navbar() {
   const [isOpen, setIsOpen] = useState<boolean>(false)
   return (
-    <header className="absolute border-b-[1px] top-0 z-40 w-full  dark:border-b-slate-700 dark:bg-background">
+    <header className="border-b w-full">
       <NavigationMenu className="mx-auto">
-        <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between ">
+        <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between">
           <NavigationMenuItem className="font-bold flex">
             <a
               rel="noreferrer noopener"
               href="/"
-              className="ml-2 font-bold text-xl flex"
+              className="font-bold text-xl flex"
             >
-              ShadcnUI/React
+              shinzato.dev
             </a>
           </NavigationMenuItem>
 
@@ -70,10 +66,12 @@ export const Navbar = () => {
               </SheetTrigger>
 
               <SheetContent side={"left"}>
-                <SheetDescription>Mobile Navigation Menu</SheetDescription>
+                <SheetDescription className="hidden">
+                  Mobile navigation menu.
+                </SheetDescription>
                 <SheetHeader>
                   <SheetTitle className="font-bold text-xl">
-                    Shadcn/React
+                    shinzato.dev
                   </SheetTitle>
                 </SheetHeader>
                 <nav className="flex flex-col justify-center items-center gap-2 mt-4">
@@ -90,7 +88,7 @@ export const Navbar = () => {
                   ))}
                   <a
                     rel="noreferrer noopener"
-                    href="https://github.com/leoMirandaa/shadcn-landing-page.git"
+                    href="https://github.com/douglasshinzato"
                     target="_blank"
                     className={`w-[110px] border ${buttonVariants({
                       variant: "secondary",
@@ -123,7 +121,7 @@ export const Navbar = () => {
           <div className="hidden md:flex gap-2">
             <a
               rel="noreferrer noopener"
-              href="https://github.com/leoMirandaa/shadcn-landing-page.git"
+              href="https://github.com/douglasshinzato"
               target="_blank"
               className={`border ${buttonVariants({ variant: "secondary" })}`}
             >

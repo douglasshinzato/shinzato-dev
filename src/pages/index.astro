@@ -1,12 +1,9 @@
 ---
 import Layout from "@/layouts/Layout.astro"
 import "@/styles/globals.css"
-import { Button } from "@/components/ui/button"
-import { Navbar } from "@/components/Navbar"
+import { Hero } from "@/components/Hero"
 ---
 
 <Layout title="shinzato.dev">
-  <Navbar client:only="react">
-    <Button>Hello World</Button>
-  </Navbar>
+  <Hero />
 </Layout>
