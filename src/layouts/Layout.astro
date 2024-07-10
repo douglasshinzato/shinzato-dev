@@ -5,6 +5,7 @@ interface Props {
 
 const { title } = Astro.props
 import { Navbar } from "@/components/Navbar"
+import { ViewTransitions } from "astro:transitions"
 ---
 
 <!doctype html>
@@ -20,6 +21,7 @@ import { Navbar } from "@/components/Navbar"
       content="shinzato.dev - Douglas Shinzato Portfolio."
     />
     <title>{title}</title>
+    <ViewTransitions />
   </head>
   <body>
     <Navbar client:only="react" />
