@@ -8,7 +8,7 @@ export function Techs() {
   return (
     <section id="techs" className="my-8 mx-auto text-center ">
       <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
-        Technologies i work with
+        Technologies I work with
       </h2>
       <div className=" hidden md:flex flex-wrap items-center justify-center gap-14 mt-12">
         <SiReact size={60} />

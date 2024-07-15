@@ -11,12 +11,15 @@ export function Hero() {
         Transforming Lives.
       </p>
       <div className="flex flex-col md:flex-row gap-2">
-        <Button size={"lg"}>
-          <a href="/projects">Projetos</a>
-        </Button>
-        <Button size={"lg"} variant="outline">
-          <a href="#">Contato</a>
-        </Button>
+        <a href="/projects">
+          <Button size={"lg"}>Projetos</Button>
+        </a>
+
+        <a href="/contact">
+          <Button size={"lg"} variant="outline">
+            Contato
+          </Button>
+        </a>
       </div>
     </section>
   )
