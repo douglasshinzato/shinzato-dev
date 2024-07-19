@@ -9,7 +9,7 @@ import {
 
 export function ProjectsList() {
   return (
-    <section className="my-14">
+    <section className="mt-14">
       <h2 className="my-12 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
         Projetos
       </h2>

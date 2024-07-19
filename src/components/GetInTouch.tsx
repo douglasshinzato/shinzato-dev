@@ -3,7 +3,7 @@ import { Card } from "./ui/card"
 
 export function GetInTouch() {
   return (
-    <section id="footer" className="my-14">
+    <section id="footer" className="mt-14">
       <h2 className="my-12 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
         Entre em contato
       </h2>
@@ -12,8 +12,8 @@ export function GetInTouch() {
           <div className="flex flex-col gap-4">
             <div className="space-y-1">
               <p className="text-muted-foreground">
-                Tem alguma ideia ou projeto em mente? Entre em contato que
-                ficarei feliz em te ajudar a desenvolver seu projeto!
+                Tem alguma ideia? Entre em contato que ficarei feliz em te
+                ajudar a desenvolver seu projeto!
               </p>
             </div>
             <div className="flex flex-col gap-4 justify-center items-center">
