@@ -4,9 +4,9 @@ interface Props {
 }
 
 const { title } = Astro.props
-import { Navbar } from "@/components/Navbar"
-import { ViewTransitions } from "astro:transitions"
-import { Footer } from "@/components/Footer"
+import { Navbar } from '@/components/Navbar'
+import { ClientRouter } from 'astro:transitions'
+import { Footer } from '@/components/Footer'
 ---
 
 <!doctype html>
@@ -22,7 +22,7 @@ import { Footer } from "@/components/Footer"
       content="shinzato.dev - Douglas Shinzato Portfolio."
     />
     <title>{title}</title>
-    <ViewTransitions />
+    <ClientRouter />
   </head>
   <body>
     <Navbar client:only="react" />
